@@ -1,0 +1,135 @@
+.footer {
+    background-color: #F1F1F1;
+    font-weight: 400;
+    font-size: 12px;
+    color: #6E7191;
+    padding: 50px 15px 100px 15px;
+}
+
+.footer__wrapper {
+    max-width: 1410px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer__wrapper>div {
+    min-height: 240px;
+    height: 100%;
+}
+
+.footer a {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6E7191;
+}
+
+.footer a:hover {
+    color: #A0A3BC;
+}
+
+.footer__info {
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__info-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__info-policy a {
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.footer h3 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer__company ul,
+.footer__clients ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.footer__contacts {
+    text-align: end;
+}
+
+.footer__contacts-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__contacts-desc,
+.footer__contacts-wrapper a {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer__contacts-social>.footer__contacts-desc {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+}
+
+.footer__contacts-social>.footer__contacts-desc a svg:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 1920px) {
+    .footer {
+        padding-bottom: calc((100vw - 320px)/(1920 - 320) * (100 - 70) + 70px);
+    }
+}
+
+@media (max-width: 880px) {
+    .footer__wrapper {
+        max-width: 637px;
+        gap: 50px;
+        justify-content: space-around;
+    }
+
+    .footer__company {
+        text-align: end;
+    }
+}
+
+@media (max-width: 488px) {
+    .footer__wrapper {
+        max-width: 367px;
+        justify-content: center;
+        text-align: start;
+    }
+
+    .footer__wrapper>div {
+        height: auto;
+        min-height: auto;
+    }
+
+    .footer__company,
+    .footer__contacts {
+        text-align: start;
+    }
+
+    .footer__contacts-social>.footer__contacts-desc {
+        justify-content: start;
+    }
+
+    .footer__wrapper>div {
+        width: 190px;
+    }
+}
