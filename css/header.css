@@ -27,11 +27,16 @@
     align-items: center;
     cursor: pointer;
     height: 51px;
+    transition: all 0.3s;
 }
 
 .header__tools div:hover {
     color: #f56e1e;
 
+}
+
+.header__tools div svg path {
+    transition: all 0.3s;
 }
 
 .header__tools div:hover svg path {
@@ -46,15 +51,23 @@
     font-size: 34px;
     text-transform: uppercase;
     color: #6e7191;
+    transition: all 0.3s;
 }
 
 .header__tel:hover {
     color: #f56e1e;
 }
 
-.header__tel:hover svg path {
-    stroke: #f56e1e;
+.header__tel svg path {
+    transition: all 0.3s;
+}
+
+.header__tel:hover svg path:last-child {
     fill: #f56e1e;
+}
+
+.header__tel:hover svg path:not(:last-child) {
+    stroke: #f56e1e;
 }
 
 .header__worktime {
@@ -88,7 +101,8 @@
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
 }
 
 .header__nav ul li a:hover {

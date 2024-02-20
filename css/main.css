@@ -2,8 +2,10 @@
 
 @import './header.css';
 @import './footer.css';
-@import './home/new.css';
+
+
 @import './home/presentation.css';
+@import './home/home.css';
 
 * {
     box-sizing: border-box;
