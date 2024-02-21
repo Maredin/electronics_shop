@@ -7,6 +7,16 @@
 @import './home/presentation.css';
 @import './home/home.css';
 
+@import './catalog/catalog.css';
+
+@import './client/client.css';
+
+@import './delivery/delivery.css';
+
+@import './contacts/contacts.css';
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;

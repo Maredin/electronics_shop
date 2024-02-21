@@ -1,0 +1,21 @@
+.warehouse {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 15px;
+}
+
+.warehouse h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 112%;
+    color: #6E7191;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.warehouse__desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6E7191;
+    margin-top: 30px;
+}

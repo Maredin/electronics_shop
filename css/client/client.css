@@ -1,0 +1,30 @@
+.registration,
+.order,
+.payment,
+.warranty {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 15px;
+}
+
+.registration h2,
+.order h2,
+.payment h2,
+.warranty h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 112%;
+    color: #6E7191;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.registration__desc,
+.order__desc,
+.payment__desc,
+.warranty__desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6E7191;
+    margin-top: 30px;
+}

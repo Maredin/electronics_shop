@@ -17,9 +17,9 @@
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.news-desc,
-.about-desc,
-.brands-desc {
+.news__desc,
+.about__desc,
+.brands__desc {
     font-weight: 400;
     font-size: 14px;
     color: #6E7191;
@@ -79,5 +79,11 @@
         top: calc((100vw - 320px)/(1440 - 320) * (60 - 13) + 13px);
         left: calc((100vw - 320px)/(1440 - 320) * (65 - 13) + 13px);
         font-size: calc((100vw - 320px)/(1440 - 320) * (35 - 7) + 7px);
+    }
+}
+
+@media (max-width: 653px) {
+    .home__img {
+        display: none;
     }
 }
