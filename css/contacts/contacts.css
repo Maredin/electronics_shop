@@ -21,6 +21,7 @@
     display: flex;
     gap: 50px;
     flex-direction: column;
+    min-width: 350px;
 }
 
 .contacts__desc-tel h3,
@@ -59,4 +60,43 @@
 .contacts__desc-social h4 a,
 .contacts__desc-address h4 a {
     text-decoration: underline;
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contacts__map {
+    margin-top: 30px;
+    flex: 0 1 50%;
+}
+
+.contacts__map-frame {
+    width: 100%;
+    height: 399px;
+    border: none;
+    border-radius: 20px;
+}
+
+@media (max-width: 791px) {
+    .contacts__map {
+        flex: 0 1 100%;
+    }
+
+    .contacts__map-frame {
+        height: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contacts__map {
+        display: none;
+    }
+
+    .contacts__desc {
+        min-width: auto;
+    }
 }
