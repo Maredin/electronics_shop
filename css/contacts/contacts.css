@@ -18,4 +18,45 @@
     font-size: 14px;
     color: #6E7191;
     margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.contacts__desc-tel h3,
+.contacts__desc-social h3,
+.contacts__desc-address h3 {
+    font-size: 20px;
+}
+
+.contacts__desc-tel ul li {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.contacts__desc-tel ul li a,
+.contacts__desc-social h4 a,
+.contacts__desc-address h4 a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #6E7191;
+    transition: all 0.3s;
+}
+
+.contacts__desc-tel ul li a:hover,
+.contacts__desc-social h4 a:hover,
+.contacts__desc-address h4 a:hover {
+    color: #f56e1e;
+}
+
+.contacts__desc-social h4,
+.contacts__desc-address h4,
+.contacts__desc-worktime h4 {
+    margin-top: 10px;
+}
+
+.contacts__desc-social h4 a,
+.contacts__desc-address h4 a {
+    text-decoration: underline;
 }
