@@ -1,0 +1,71 @@
+.registr {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 15px;
+}
+
+.registr h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 112%;
+    color: #6E7191;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contacts__form {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6E7191;
+}
+
+.contacts__form-completion {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contacts__form-completion button {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 10px;
+    border-color: #f56e1e;
+}
+
+.contacts__form-completion button:hover {
+    background-color: #f56e1e;
+    color: rgb(255, 255, 255);
+}
+
+.contacts__form input {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.contacts__form input:focus-visible {
+    outline: 0;
+    border-color: #f56e1e;
+}
+
+.contacts__form-wrapper {
+    margin-top: 40px;
+    border-top: 2px solid silver;
+    padding-top: 20px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contacts__form-wrapper>div {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.contacts__form-namecorp {
+    display: flex;
+    justify-content: space-between;
+
+}
