@@ -49,23 +49,99 @@
     border-color: #f56e1e;
 }
 
+.contacts__form label {
+    align-self: center;
+    white-space: nowrap;
+}
+
 .contacts__form-wrapper {
     margin-top: 40px;
     border-top: 2px solid silver;
-    padding-top: 20px;
+    border-bottom: 2px solid silver;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .contacts__form-wrapper>div {
-    align-items: center;
     display: flex;
-    gap: 10px;
+    max-width: 800px;
+}
+
+.contacts__form-corp {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 20px;
 }
 
 .contacts__form-namecorp {
     display: flex;
     justify-content: space-between;
+    max-width: 1000px;
+    flex: 0 0 100%;
+}
 
+.contacts__form-inn,
+.contacts__form-kpp,
+.contacts__form-contactuser,
+.contacts__form-tel {
+    display: flex;
+    gap: 10px;
+    flex: 1 0 48%;
+}
+
+.contacts__form-adres {
+    flex-wrap: nowrap;
+    flex: 0 0 100%;
+}
+
+.contacts__form-adres input,
+.contacts__form-namecorp input {
+    min-width: 280px;
+}
+
+.contacts__form-wrapper input {
+    width: 100%;
+}
+
+.contacts__form-namecorp,
+.contacts__form-adres,
+.contacts__form-contact {
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contacts__form-btn {
+    max-width: 800px;
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+}
+
+.contacts__form-btn button {
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 10px;
+    border-color: #f56e1e;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contacts__form-btn button:hover {
+    background-color: #f56e1e;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 700px) {
+
+    .contacts__form-completion,
+    .contacts__form-namecorp,
+    .contacts__form-adres,
+    .contacts__form-contact {
+        flex-wrap: wrap;
+    }
 }
