@@ -3,7 +3,7 @@
 function ifns() {
 
     function postInn() {
-        var url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party";
+        var url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party";
         var token = "5fb4193913ae597cc2ed2b871a389cfca8c5d0a1";
         /* var query = "0276960223"; */
 
