@@ -185,6 +185,186 @@ path:nth-child(6) {
 }
 
 
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.336);
+    z-index: 3;
+    padding: 15px;
+    display: none;
+}
+
+.popup__enter {
+    max-width: 400px;
+    height: 420px;
+    background: #FFF;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 30px 0 40px 0;
+}
+
+.popup__enter-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 112%;
+    color: #6E7191;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.popup__enter-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -10px;
+}
+
+.popup__enter-login,
+.popup__enter-pass {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.popup__enter-login input,
+.popup__enter-pass input {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.popup__enter-login input:focus-visible,
+.popup__enter-pass input:focus-visible {
+    outline: 0;
+    border-color: #f56e1e;
+}
+
+.popup__enter-login label,
+.popup__enter-pass label {
+    font-weight: 500;
+    font-size: 18px;
+    color: #6E7191;
+}
+
+.popup__enter-enter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.popup__enter-enter button {
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 10px;
+    border-color: #f56e1e;
+    font-size: 18px;
+    font-weight: 500;
+    width: 182px;
+}
+
+.popup__enter-enter button:hover {
+    background-color: #f56e1e;
+    color: rgb(255, 255, 255);
+}
+
+.popup__enter-enter a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #6E7191;
+    transition: all 0.3s;
+}
+
+.popup__enter-enter a:hover {
+    color: #f56e1e;
+}
+
+
+.cl-btn-6 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    margin: 20px auto;
+    width: 40px;
+    cursor: pointer;
+}
+
+.cl-btn-6-in {
+    width: inherit;
+    text-align: center;
+}
+
+.cl-btn-6-txt {
+    font-size: 7px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6e7191;
+    transition: all .3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+    font-family: Verdana;
+}
+
+.cl-btn-6-in:before,
+.cl-btn-6-in:after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: inherit;
+    background: #6e7191;
+    left: 0;
+    transition: all .3s ease-in;
+}
+
+.cl-btn-6-in:before {
+    top: calc(50% - 4px);
+    transform: rotate(45deg);
+}
+
+.cl-btn-6-in:after {
+    bottom: 50%;
+    transform: rotate(-45deg);
+}
+
+.cl-btn-6:hover .cl-btn-6-txt {
+    opacity: 1;
+    color: #f56e1e;
+}
+
+.cl-btn-6:hover .cl-btn-6-in:before,
+.cl-btn-6:hover .cl-btn-6-in:after {
+    background: #f56e1e;
+}
+
+
+.cl-btn-6:hover .cl-btn-6-in:before,
+.cl-btn-6:hover .cl-btn-6-in:after {
+    transform: rotate(0);
+}
+
+.cl-btn-6:hover .cl-btn-6-in:before {
+    top: 0;
+}
+
+.cl-btn-6:hover .cl-btn-6-in:after {
+    bottom: 0;
+}
+
+
 
 @media (max-width: 1920px) {
     .header__wrapper {

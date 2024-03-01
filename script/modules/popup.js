@@ -1,34 +1,30 @@
 
-// Функция Попап с таймером. Если таймер false, то таймер не работает
+
 function popup(modal, btnModal, timer) {
-    const popup = document.querySelector(modal), //Сам блок попап
-        btn = document.querySelector(btnModal); // Кнопка закрытия
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.popup-close');
+    const enterBtn = document.querySelector('.header__tools-profile');
 
-    // Вешаем обработчик на кнопку, чтоб показать модалку    
-    btn.addEventListener('click', (e) => {
-        e.preventDefault();
+    // Ширина скрола на странице
+    let scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+
+    function showModal() {
         popup.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    });
+        document.body.style.position = 'fixed';
 
-    // Вешаем обработчик на модальное окно, чтоб скрыть модалку по клику  
-    popup.addEventListener('click', (e) => {
-        if(e.target.classList.contains('poppup__close') ||  e.target.classList.contains('poppup')) {
-            popup.style.display = 'none';
-            document.body.style.overflow = '';
-        }
-    });
-
-    //Таймер открытия модалки в мс
-    if(timer > 0) {
-        setTimeout((timer)=> {
-            popup.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }, timer)
+        document.body.style.paddingRight = scrollWidth + 'px';
     }
-}
 
-/* popup('.poppup', '.btn', false);
-popup('.poppup', '.btn__first', 2000); */
+    function hideModal() {
+        popup.style.display = 'none';
+        document.body.style.position = '';
+        document.body.style.paddingRight = 0;
+    }
+
+
+    enterBtn.addEventListener('click', showModal);
+    close.addEventListener('click', hideModal);
+
+}
 
 export default popup;

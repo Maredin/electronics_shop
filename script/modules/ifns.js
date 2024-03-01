@@ -5,7 +5,6 @@ function ifns() {
     function postInn() {
         var url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party";
         var token = "5fb4193913ae597cc2ed2b871a389cfca8c5d0a1";
-        /* var query = "0276960223"; */
 
         const inn = document.querySelector('.contacts__form-completion input').value;
 
@@ -32,7 +31,7 @@ function ifns() {
         fetch(url, options)
             .then(response => response.json())
             .then(result => {
-                console.log(result);
+                /* console.log(result); */
                 corp = result.suggestions[0].value;
                 name.value = result.suggestions[0].value;
                 kpp.value = result.suggestions[0].data.kpp;
@@ -48,12 +47,16 @@ function ifns() {
 
     }
 
-    const btnPostInn = document.querySelector('.contacts__form-completion button');
+    if (window.location.href == (window.location.origin + '/registr.html')) {
 
-    btnPostInn.addEventListener('click', (e) => {
-        e.preventDefault();
-        postInn();
-    });
+        const btnPostInn = document.querySelector('.contacts__form-completion button');
+
+        btnPostInn.addEventListener('click', (e) => {
+            e.preventDefault();
+            postInn();
+        });
+    }
+
 }
 
 
