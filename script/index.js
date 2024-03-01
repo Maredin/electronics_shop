@@ -6,8 +6,8 @@ import popup from "./modules/popup.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     switch (window.location.href) {
-        case (window.location.origin + '/registr.html'):
-            console.log(123456);
+
+        case (window.location.origin + '/electronics_shop/registr.html' || window.location.origin + '/electronics_shop/registr.html?'):
             ifns();
     }
 
