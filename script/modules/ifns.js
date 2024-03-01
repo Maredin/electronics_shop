@@ -47,15 +47,13 @@ function ifns() {
 
     }
 
-    if (window.location.href == (window.location.origin + '/registr.html')) {
+    const btnPostInn = document.querySelector('.contacts__form-completion button');
 
-        const btnPostInn = document.querySelector('.contacts__form-completion button');
+    btnPostInn.addEventListener('click', (e) => {
+        e.preventDefault();
+        postInn();
+    });
 
-        btnPostInn.addEventListener('click', (e) => {
-            e.preventDefault();
-            postInn();
-        });
-    }
 
 }
 
