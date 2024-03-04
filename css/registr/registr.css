@@ -87,10 +87,13 @@
 .contacts__form-inn,
 .contacts__form-kpp,
 .contacts__form-contactuser,
-.contacts__form-tel {
+.contacts__form-tel,
+.contacts__form-pas,
+.contacts__form-dablepas {
     display: flex;
     gap: 10px;
     flex: 1 0 48%;
+    flex-wrap: wrap;
 }
 
 .contacts__form-adres {
@@ -112,6 +115,23 @@
 .contacts__form-contact {
     gap: 20px;
     justify-content: space-between;
+}
+
+.contacts__form-tel,
+.contacts__form-pas,
+.contacts__form-dablepas {
+    position: relative;
+}
+
+.contacts__form-tel::after,
+.contacts__form-pas::after,
+.contacts__form-dablepas::after {
+    content: '*';
+    color: #ff0000;
+    font-size: 25px;
+    position: absolute;
+    top: 18px;
+    right: -12px;
 }
 
 .contacts__form-btn {
@@ -144,4 +164,8 @@
     .contacts__form-contact {
         flex-wrap: wrap;
     }
+}
+
+.contacts__form-contact {
+    flex-wrap: wrap;
 }
