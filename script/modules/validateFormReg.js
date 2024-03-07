@@ -1,6 +1,6 @@
 
 function validateFormReg() {
-    console.log(123);
+
     const inn = document.querySelector('.contacts__form-inn input');
     const kpp = document.querySelector('.contacts__form-kpp input');
     const tel = document.querySelector('.contacts__form-tel input');

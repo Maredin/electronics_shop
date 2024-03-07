@@ -1,11 +1,11 @@
-.warehouse {
+.catalog {
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 50px;
     padding: 0 15px;
 }
 
-.warehouse h2 {
+.catalog h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 112%;
@@ -13,9 +13,48 @@
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.warehouse__desc {
+.catalog__desc {
     font-weight: 400;
     font-size: 14px;
     color: #6E7191;
     margin-top: 30px;
+}
+
+.catalog__nav {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.catalog__nav-catr {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    border: 1px solid #6E7191;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.catalog__nav-catr:hover {
+    box-shadow: 5px 5px 20px #f56e1e;
+    border-color: #f56e1e;
+}
+
+.catalog__nav-img {
+    max-width: 150px;
+    height: 100px;
+}
+
+.catalog__nav-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #6E7191;
 }
