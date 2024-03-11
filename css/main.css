@@ -2,7 +2,7 @@
 
 @import './header.css';
 @import './footer.css';
-
+@import './breadcrumbs.css';
 
 @import './home/presentation.css';
 @import './home/home.css';
@@ -16,6 +16,10 @@
 @import './contacts/contacts.css';
 
 @import './registr/registr.css';
+
+@import './about/about.css';
+
+
 
 
 

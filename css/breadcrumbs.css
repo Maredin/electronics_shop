@@ -1,0 +1,34 @@
+.breadcrumbs {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0 15px;
+    padding-left: 40px;
+}
+
+.breadcrumbs__items {
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumbs__items-link {
+    font-weight: 400;
+    font-size: 18px;
+    color: #6E7191;
+    transition: all 0.3s;
+}
+
+.breadcrumbs__items-link:hover {
+    color: #f56e1e;
+}
+
+.breadcrumbs__items-link::after {
+    content: '/';
+    margin-left: 10px;
+}
+
+.breadcrumbs__items-span {
+    color: #f56e1e;
+    font-weight: 400;
+    font-size: 18px;
+}
