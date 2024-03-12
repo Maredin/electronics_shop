@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     padding: 15px;
+    padding-top: 25px;
 }
 
 .header__wrapper {
@@ -362,6 +363,49 @@ path:nth-child(6) {
 
 .cl-btn-6:hover .cl-btn-6-in:after {
     bottom: 0;
+}
+
+/* -----------Логотип -------------- */
+
+.fil1 {
+    fill: #6e7191;
+    transition: all 0.3s;
+}
+
+.fil0 {
+    fill: #6e7191;
+    fill-rule: nonzero;
+    transition: all 0.3s;
+}
+
+.header__logo:hover .fil1,
+.header__logo:hover .fil0 {
+    fill: #f56e1e;
+    opacity: 1;
+}
+
+.line-sun {
+    opacity: 0;
+}
+
+.header__logo-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__logo-link p {
+    font-weight: 600;
+    font-size: 25px;
+    color: #6E7191;
+}
+
+.header__logo-svg {
+    margin-top: -24px;
+}
+
+.header__logo:hover .base {
+    fill: #6e7191;
 }
 
 
